@@ -1,0 +1,100 @@
+[clean] rows in: 130 | missing/blank dropped: 0 | exact duplicates dropped: 0 | conflicting-label dishes dropped: 0 | rows out: 130
+
+Class balance:
+category
+Starter        25
+Main Course    25
+Dessert        20
+Bread          20
+Rice           20
+Beverage       20
+
+Train: 104 | Test: 26
+Best C for primary (train-only CV): 10 (CV acc 0.818)
+
+=== Test-set accuracy (26 unseen dishes) ===
+LogReg + word TF-IDF                       0.577
+LogReg + word+char TF-IDF (primary)        0.577
+LinearSVC + word+char TF-IDF               0.577
+
+=== Repeated 5-fold CV over all 130 dishes (3 repeats) ===
+LogReg + word TF-IDF                       0.731 +/- 0.066
+LogReg + word+char TF-IDF (primary)        0.762 +/- 0.063
+LinearSVC + word+char TF-IDF               0.762 +/- 0.060
+
+=== Primary model: LogReg + word+char TF-IDF (primary) ===
+Test accuracy: 0.577
+
+              precision    recall  f1-score   support
+
+    Beverage       0.00      0.00      0.00         4
+       Bread       1.00      1.00      1.00         4
+     Dessert       0.40      0.50      0.44         4
+ Main Course       0.38      0.60      0.46         5
+        Rice       1.00      1.00      1.00         4
+     Starter       0.50      0.40      0.44         5
+
+    accuracy                           0.58        26
+   macro avg       0.55      0.58      0.56        26
+weighted avg       0.54      0.58      0.55        26
+
+=== Test-set mistakes ===
+           dish        true        pred
+  Veg Kolhapuri Main Course     Starter
+    Fruit Salad     Dessert    Beverage
+    Malai Kofta Main Course     Dessert
+   Paneer Tikka     Starter Main Course
+   Cutting Chai    Beverage Main Course
+         Samosa     Starter     Dessert
+Chocolate Shake    Beverage     Dessert
+        Falooda     Dessert     Starter
+     Aloo Tikki     Starter Main Course
+    Masala Chai    Beverage Main Course
+    Masala Soda    Beverage Main Course
+
+=== Out-of-fold mistakes over all data (30/130) ===
+           dish_name    category        pred
+        Fish Fingers     Starter Main Course
+          Chicken 65     Starter Main Course
+Chicken Tikka Masala Main Course     Starter
+               Kheer     Dessert Main Course
+               Kulfi     Dessert       Bread
+             Falooda     Dessert     Starter
+    Chocolate Mousse     Dessert    Beverage
+          Kaju Katli     Dessert Main Course
+              Samosa     Starter     Dessert
+            Dum Aloo Main Course     Starter
+            Rasmalai     Dessert Main Course
+           Aloo Gobi Main Course     Starter
+             Khichdi        Rice     Dessert
+          Buttermilk    Beverage Main Course
+     Moong Dal Halwa     Dessert Main Course
+         Masala Chai    Beverage Main Course
+    Tandoori Chicken     Starter Main Course
+        Masala Papad     Starter Main Course
+     Paneer Lababdar Main Course     Starter
+     Chocolate Shake    Beverage     Dessert
+              Phirni     Dessert     Starter
+       Veg Kolhapuri Main Course     Starter
+            Jaljeera    Beverage     Starter
+         Shahi Tukda     Dessert Main Course
+      Baingan Bharta Main Course     Starter
+         Fruit Salad     Dessert     Starter
+              Mojito    Beverage     Dessert
+         Masala Soda    Beverage Main Course
+          Aloo Tikki     Starter Main Course
+        Chana Masala Main Course    Beverage
+
+=== predict_category() on dishes not in the dataset ===
+Butter Kulcha              -> Bread        (0.94)  [Bread 0.94, Main Course 0.02, Beverage 0.02]
+Chocolate Lava Cake        -> Beverage     (0.43)  [Beverage 0.43, Dessert 0.41, Starter 0.05]  <-- needs review
+Prawn Biryani              -> Rice         (0.98)  [Rice 0.98, Dessert 0.01, Beverage 0.00]
+Vanilla Milkshake          -> Beverage     (0.32)  [Beverage 0.32, Dessert 0.32, Starter 0.13]  <-- needs review
+Paneer Tikka Masala        -> Main Course  (0.72)  [Main Course 0.72, Starter 0.21, Beverage 0.03]
+Cheese Garlic Bread        -> Bread        (0.34)  [Bread 0.34, Starter 0.23, Dessert 0.17]  <-- needs review
+Chicken Lollipop           -> Starter      (0.60)  [Starter 0.60, Main Course 0.30, Rice 0.04]
+Tandoori Paneer Tikka      -> Starter      (0.91)  [Starter 0.91, Main Course 0.03, Bread 0.03]
+Lemon Iced Tea             -> Beverage     (0.75)  [Beverage 0.75, Rice 0.08, Dessert 0.05]
+Rava Dosa                  -> Starter      (0.30)  [Starter 0.30, Dessert 0.21, Main Course 0.17]  <-- needs review
+panner butter masla        -> Main Course  (0.69)  [Main Course 0.69, Bread 0.14, Beverage 0.08]
+Hakka Noodles              -> Starter      (0.33)  [Starter 0.33, Dessert 0.22, Beverage 0.16]  <-- needs review

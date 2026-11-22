@@ -1,0 +1,69 @@
+[Reference date 'today' = Tue 2026-11-17; data covers 2026-10-20 to 2026-11-17]
+
+Q: 'What were the top 3 dishes yesterday?'
+A: Top 3 dishes yesterday (Mon 2026-11-16) by quantity:
+  1. Fish Fingers: 4 sold, ₹1,120
+  2. Dal Makhani: 4 sold, ₹840
+  3. Cold Coffee: 4 sold, ₹440
+
+Q: 'How much did we sell today?'
+A: Sales for all items today (Tue 2026-11-17): ₹9,315 from 66 units sold.
+
+Q: 'How many butter naan were sold this week?'
+A: No sales of Butter Naan recorded this week (Mon 2026-11-16 to Tue 2026-11-17) (sales data covers 2026-10-20 to 2026-11-17). Tip: try 'last 7 days' for a rolling window.
+
+Q: 'How many butter naan were sold last week?'
+A: Butter Naan: 4 units sold last week (Mon 2026-11-09 to Sun 2026-11-15) (worth ₹200).
+
+Q: 'How many butter naan were sold in the last 7 days?'
+A: Butter Naan: 4 units sold last 7 days (2026-11-11 to 2026-11-17) (worth ₹200).
+
+Q: 'Top 5 dishes in the last 7 days'
+A: Top 5 dishes last 7 days (2026-11-11 to 2026-11-17) by quantity:
+  1. Tandoori Roti: 35 sold, ₹875
+  2. Veg Biryani: 21 sold, ₹4,830
+  3. Masala Chai: 21 sold, ₹630
+  4. Paneer Tikka: 20 sold, ₹4,400
+  5. Cold Coffee: 19 sold, ₹2,090
+
+Q: 'Revenue from desserts last week'
+A: Sales for Dessert category last week (Mon 2026-11-09 to Sun 2026-11-15): ₹5,890 from 51 units sold. Average ₹982 per day with sales (6 days).
+
+Q: 'Which day had the highest sales?'
+A: Highest sales day across all recorded data (2026-10-20 to 2026-11-17):
+  Sun 2026-11-01: ₹13,665 (98 items)
+
+Q: 'How many biryani did we sell on 2026-11-10?'
+A: Items matching 'biryani': 4 units sold on Tue 2026-11-10 (worth ₹1,190).
+  Breakdown: Chicken Biryani 2, Mutton Biryani 1, Veg Biryani 1
+
+Q: 'how many panner butter masla were sold in the last 10 days'
+A: Paneer Butter Masala: 22 units sold last 10 days (2026-11-08 to 2026-11-17) (worth ₹5,720).
+  (interpreted your dish name as 'Paneer Butter Masala')
+
+Q: 'What is the best selling category this month?'
+A: Top category this month (November 2026 so far) by quantity:
+  1. Bread: 287 sold, ₹15,085
+
+Q: 'Least popular dish last week'
+A: Bottom dish last week (Mon 2026-11-09 to Sun 2026-11-15) by quantity:
+  1. Mineral Water: 1 sold, ₹20
+  (note: 18 more dishes tie on quantity = 1; shown order uses the other metric)
+
+Q: "What's the weather like tomorrow?"
+A: Sorry, I can't answer that: I can only report past sales from the file, not forecasts. I won't guess. I can answer questions about sales, e.g. "top 3 dishes yesterday", "how much did we sell today?", "how many butter naan were sold this week?", "revenue from desserts last week" or "which day had the highest sales?".
+
+Q: 'How many customers came today?'
+A: Sorry, I can't answer that: the data only has item, quantity and price per day, so it has no order counts, customers, costs or stock levels. I won't guess. I can answer questions about sales, e.g. "top 3 dishes yesterday", "how much did we sell today?", "how many butter naan were sold this week?", "revenue from desserts last week" or "which day had the highest sales?".
+
+Q: 'How many chicken wings did we sell?'
+A: Sorry, I can't answer that: I couldn't match 'wings' to any dish or category. I won't guess. I can answer questions about sales, e.g. "top 3 dishes yesterday", "how much did we sell today?", "how many butter naan were sold this week?", "revenue from desserts last week" or "which day had the highest sales?".
+
+Q: 'Tell me a joke'
+A: Sorry, I can't answer that: I couldn't match 'joke' to any dish or category. I won't guess. I can answer questions about sales, e.g. "top 3 dishes yesterday", "how much did we sell today?", "how many butter naan were sold this week?", "revenue from desserts last week" or "which day had the highest sales?".
+
+Q: 'Total sales on 2025-01-01'
+A: No sales recorded on Wed 2025-01-01 (sales data covers 2026-10-20 to 2026-11-17).
+
+Q: ''
+A: Sorry, I can't answer that: empty question. I won't guess. I can answer questions about sales, e.g. "top 3 dishes yesterday", "how much did we sell today?", "how many butter naan were sold this week?", "revenue from desserts last week" or "which day had the highest sales?".
